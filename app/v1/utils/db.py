@@ -12,12 +12,6 @@ DB_PASS = settings.db_pass
 DB_HOST = settings.db_host
 DB_PORT = settings.db_port
 
-print(f"DB_NAME: {DB_NAME}")  # Debugging line to check if environment variables are loaded correctly
-print(f"DB_USER: {DB_USER}")  # Debugging line to check if environment variables are loaded correctly
-print(f"DB_PASS: {DB_PASS}")  # Debug
-print(f"DB_HOST: {DB_HOST}")  # Debugging line to check if environment variables are loaded correctly
-print(f"DB_PORT: {DB_PORT}")  # Debugging line to check if environment variables are loaded correctly
-
 if DB_PASS and not isinstance(DB_PASS, str):
     DB_PASS = str(DB_PASS)
 
