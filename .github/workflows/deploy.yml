@@ -26,7 +26,7 @@ jobs:
           ssh ec2-user@${{ secrets.EC2_HOST }} '
             cd /home/ec2-user/todo-app && 
             git pull && 
-            source venv/bin/activate && 
+            source .venv/bin/activate && 
             pip install -r requirements.txt && 
             sudo systemctl restart todo-app &&
             echo "Deployment completed at $(date)"
